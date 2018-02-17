@@ -1,0 +1,22 @@
+{
+    "name": "displacetech/release-hashes",
+    "description": "Release hash generator and repository for public projects.",
+    "type": "project",
+    "require": {
+        "paragonie/sodium_compat": "^1.5",
+        "symfony/console": "^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eric Mann",
+            "email": "eric@eamann.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "DisplaceTech\\ReleaseHashes\\": "src"
+        }
+    }
+}
