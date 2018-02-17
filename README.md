@@ -5,7 +5,7 @@ This repository is meant to aid in the creation of a secure application updater 
 File signatures are stored in the `/hashes` directory. All files in that directory are signed with the following Ed25519 public key (hex-encoded):
 
 ```
-
+5d4c696e571307b4a47626ae0bf9a7a229403c46657b4a9e832fee47e253bc5b
 ```
 
 All signatures can be read directly from this repository, or from our CloudFront cached distribution: `https://releasesignatures.displace.tech`.
