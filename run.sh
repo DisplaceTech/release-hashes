@@ -9,5 +9,6 @@ $application = new Application();
 
 // Register commands
 $application->add(new ReleaseHashes\WordPressHashesCommand());
+$application->add(new ReleaseHashes\PluginHashesCommand());
 
 $application->run();
