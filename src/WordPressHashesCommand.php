@@ -123,14 +123,14 @@ class WordPressHashesCommand extends Command
         $files = [];
 
         $versions = [
-            '4.9.8',
-            '4.8.7',
+            '4.9.9',
+            '4.8.8',
             '4.7.11',
-            '4.6.12',
-            '4.5.15',
-            '4.4.16',
-            '4.3.17',
-            '4.2.21'
+            '4.6.13',
+            '4.5.16',
+            '4.4.17',
+            '4.3.18',
+            '4.2.22'
         ];
 
         foreach ($versions as $version) {
