@@ -123,6 +123,7 @@ class WordPressHashesCommand extends Command
         $files = [];
 
         $versions = [
+            '5.0.2',
             '4.9.9',
             '4.8.8',
             '4.7.11',
