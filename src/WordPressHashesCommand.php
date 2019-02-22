@@ -69,9 +69,13 @@ class WordPressHashesCommand extends Command
             $hash = md5_file($file, false);
             $output->writeln(sprintf('Local hash: %s', $hash));
 
-            if (!hash_equals($server_hash, $hash)) {
-                $output->writeln('Hashes not equal, refusing to sign the package!');
-                continue;
+            if (empty($server_hash)) {
+                $output->writeln('Server hash unavailable. Make sure you know what you are doing!');
+            } else {
+	        if (!hash_equals($server_hash, $hash)) {
+                    $output->writeln('Hashes not equal, refusing to sign the package!');
+                    continue;
+                }
             }
 
             $output->writeln('Signing ...');
@@ -122,7 +126,8 @@ class WordPressHashesCommand extends Command
     {
         $files = [];
 
-        $versions = [
+	$versions = [
+            '5.1.0',
             '5.0.3',
             '4.9.9',
             '4.8.8',
